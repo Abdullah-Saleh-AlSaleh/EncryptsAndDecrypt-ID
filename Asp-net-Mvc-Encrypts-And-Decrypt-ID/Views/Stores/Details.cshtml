@@ -1,0 +1,50 @@
+﻿@model Asp.net_Mvc_Encrypts_And_Decrypt_ID.Models.Store
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Store</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ProducetName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProducetName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ProducetDetails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ProducetDetails)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.StoreID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
